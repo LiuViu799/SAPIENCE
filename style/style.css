@@ -1,10 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: auto;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
 header {
     background-color: #222;
     padding: 10px 20px;
@@ -12,25 +18,31 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 header .logo img {
-    height: 50px;
+    height: 90px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
 .banner img {
-    width: 100%;
-    height: auto;
+    width: 20%;
+    height: 100%;
 }
+
 main {
-    padding: 20px;
+    flex: 1;
 }
+
 footer {
     background-color: #222;
     color: #fff;
