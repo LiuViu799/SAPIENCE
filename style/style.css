@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+    display: block;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,15 +37,21 @@ nav ul li a {
 
 .banners-row {
     display: flex;
-    gap: 10px; /* расстояние между баннерами */
+    gap: 10px;
+}
+
+.banner {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner img {
-    display: block;
     max-width: 100%;
     height: auto;
+    display: block;
 }
-
 main {
     flex: 1;
 }
@@ -57,4 +64,56 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body.accueil {
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body.accueil {
+    text-align: center;
+}
+
+.contact-bg {
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../images/bg2.jpg'); /* замените на ваш файл */
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-content {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body.contact {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body.contact .contact-bg {
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.contact .contact-content {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
