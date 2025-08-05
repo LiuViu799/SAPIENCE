@@ -5,7 +5,6 @@ html, body {
 }
 
 body {
-    display: block;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -70,33 +69,19 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
 }
+/*
 body.accueil {
     background-image: url('../images/bg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-body.accueil {
     text-align: center;
 }
+*/
 
-.contact-bg {
-    width: 50vw;
-    height: 100vh;
-    background-image: url('../images/bg2.jpg'); /* замените на ваш файл */
-    background-size: cover;
-    background-position: center;
-}
-
-.contact-content {
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 body.contact {
     display: flex;
+    flex-direction: row;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -116,4 +101,67 @@ body.contact .contact-content {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+
+body.accueil 
+{
+    position: relative;
+    display: flex;
+    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;    
+    line-height: 1.1; /* уменьшает межстрочный интервал */
+    text-align: center;
+    overflow: hidden; /* чтобы псевдоэлемент не выходил за пределы */
+}
+
+/* Полупрозрачный фон через псевдоэлемент */
+body.accueil::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* степень прозрачности фона */
+}
+
+body.accueil h1,
+body.accueil h2,
+body.accueil p {
+    margin-top: 1px;   /* уменьшает внешние отступы сверху */
+    margin-bottom: 1px; /* уменьшает внешние отступы снизу */
+}
+body.services {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.1;
+    text-align: center;
+    overflow: hidden;   
+    margin: 0;
+    padding: 0;
+}   
+
+body.services::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* степень прозрачности фона */
+}   
+body.services h1,
+body.services h2,
+body.services p {
+    margin-top: 8px;   /* уменьшает внешние отступы сверху */
+    margin-bottom: 8px; /* уменьшает внешние отступы снизу */
 }
