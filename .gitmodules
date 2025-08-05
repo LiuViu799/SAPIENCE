@@ -1,5 +1,5 @@
 [submodule "path/to/SAPIENCE"]
-	path = path/to/SAPIENCE
+	path = path/to/SAPIENCE/SAPIENCE
 	url = https://github.com/LiuViu799/SAPIENCE.git
 [submodule "SAPIENCE"]
 	path = SAPIENCE
