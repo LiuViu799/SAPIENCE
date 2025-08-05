@@ -1,3 +1,6 @@
 [submodule "path/to/SAPIENCE"]
 	path = path/to/SAPIENCE
 	url = https://github.com/LiuViu799/SAPIENCE.git
+[submodule "SAPIENCE"]
+	path = SAPIENCE
+	url = https://github.com/LiuViu799/SAPIENCE.git
