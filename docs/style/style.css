@@ -162,6 +162,35 @@ body.services::before {
 body.services h1,
 body.services h2,
 body.services p {
+    margin-top: 5px;   /* уменьшает внешние отступы сверху */
+    margin-bottom: 5px; /* уменьшает внешние отступы снизу */
+}
+
+body.qui-sommes-nous {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.1;
+    text-align: center;
+    overflow: hidden;   
+    margin: 0;
+    padding: 0;
+}
+body.qui-sommes-nous::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-image: url('../images/bg5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* степень прозрачности фона */
+}
+body.qui-sommes-nous h1,
+body.qui-sommes-nous h2,
+body.qui-sommes-nous p {
     margin-top: 8px;   /* уменьшает внешние отступы сверху */
     margin-bottom: 8px; /* уменьшает внешние отступы снизу */
-}
+}   
